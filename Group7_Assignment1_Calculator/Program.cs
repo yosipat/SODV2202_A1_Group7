@@ -201,13 +201,20 @@ namespace Group7_Assignment1_Calculator
 
     public class Program
     {
+
+        public static double ans = 0;
         // ProcessCommand method evaluates user input expression
         public static string ProcessCommand(string input)
         {
             try
             {
+                input = input.Replace("ans", ans.ToString()); // replace previous result to 'ans'
+
                 ExpressionEvaluator evaluator = new ExpressionEvaluator();
                 double result = evaluator.Evaluate(input);
+
+                ans = result;
+
                 return result.ToString();
             }
             catch (Exception e)
@@ -220,9 +227,13 @@ namespace Group7_Assignment1_Calculator
         static void Main(string[] args)
         {
             string input;
+            Console.WriteLine("Enter the expressions :");
             while ((input = Console.ReadLine()) != "exit")
             {
+
                 Console.WriteLine(ProcessCommand(input));
+                Console.WriteLine("Enter the expressions or type 'exit' to quit:");
+
             }
         }
     }

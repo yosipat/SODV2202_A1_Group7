@@ -5,3 +5,10 @@ C:\Users\Yosip\Desktop\SODV2202\Group7_Assignment1_Calculator\Group7_Assignment1
 C:\Users\Yosip\Desktop\SODV2202\Group7_Assignment1_Calculator\Group7_Assignment1_Calculator\bin\Debug\Group7_Assignment1_Calculator.pdb
 C:\Users\Yosip\Desktop\SODV2202\Group7_Assignment1_Calculator\Group7_Assignment1_Calculator\obj\Debug\Group7_Assignment1_Calculator.exe
 C:\Users\Yosip\Desktop\SODV2202\Group7_Assignment1_Calculator\Group7_Assignment1_Calculator\obj\Debug\Group7_Assignment1_Calculator.pdb
+C:\Users\Yosip\Documents\GitHub\SODV2202_A1_Group7\Group7_Assignment1_Calculator\bin\Debug\Group7_Assignment1_Calculator.exe.config
+C:\Users\Yosip\Documents\GitHub\SODV2202_A1_Group7\Group7_Assignment1_Calculator\bin\Debug\Group7_Assignment1_Calculator.exe
+C:\Users\Yosip\Documents\GitHub\SODV2202_A1_Group7\Group7_Assignment1_Calculator\bin\Debug\Group7_Assignment1_Calculator.pdb
+C:\Users\Yosip\Documents\GitHub\SODV2202_A1_Group7\Group7_Assignment1_Calculator\obj\Debug\Group7_Assignment1_Calculator.csproj.AssemblyReference.cache
+C:\Users\Yosip\Documents\GitHub\SODV2202_A1_Group7\Group7_Assignment1_Calculator\obj\Debug\Group7_Assignment1_Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Yosip\Documents\GitHub\SODV2202_A1_Group7\Group7_Assignment1_Calculator\obj\Debug\Group7_Assignment1_Calculator.exe
+C:\Users\Yosip\Documents\GitHub\SODV2202_A1_Group7\Group7_Assignment1_Calculator\obj\Debug\Group7_Assignment1_Calculator.pdb

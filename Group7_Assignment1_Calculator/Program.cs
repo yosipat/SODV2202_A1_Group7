@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Group7_Assignment1_Calculator
 {
@@ -204,10 +205,37 @@ namespace Group7_Assignment1_Calculator
 
         public static double ans = 0;
         // ProcessCommand method evaluates user input expression
+
+        public static List<string> variableNames = new List<string>();
+        public static List<double> variableValues = new List<double>();
         public static string ProcessCommand(string input)
         {
             try
             {
+                if(input.Contains("="))
+                {
+                    string variable = input.Split('=')[0]; // before '='
+                    double value = Double.Parse(input.Split('=')[1]); // after '='
+
+                    if (variableNames.Contains(variable)) // check if variable exist
+                    {
+                        variableValues[variableNames.IndexOf(variable)]=value; // update value
+                    }
+                    else
+                    {
+                        variableNames.Add(variable); // add variable to list
+                        variableValues.Add(value); // add value to list
+                    }
+
+                    return value.ToString(); // return value to console
+                }
+                else
+                {
+                    foreach(var name in variableNames)
+                    {
+                        input = input.Replace(name, variableValues[variableNames.IndexOf(name)].ToString()); // replace value in expression
+                    }
+
                 input = input.Replace("ans", ans.ToString()); // replace previous result to 'ans'
 
                 ExpressionEvaluator evaluator = new ExpressionEvaluator();
@@ -216,6 +244,9 @@ namespace Group7_Assignment1_Calculator
                 ans = result;
 
                 return result.ToString();
+                }
+
+                
             }
             catch (Exception e)
             {
